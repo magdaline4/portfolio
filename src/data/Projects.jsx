@@ -3,8 +3,8 @@ import SpinCard from "../components/SpinCard";
 import "../assets/style/Projects.css"; // Correct relative path
 import echo from "../assets/images/echo.png";
 import port from "../assets/images/port.png";
-import Lab from "../assets/images/Lab.png";
 import Card from "../assets/images/card.png";
+import Labimg from "../assets/images/Lab.png"
 
 const Projects = () => {
   const projectData = [
@@ -26,7 +26,7 @@ const Projects = () => {
       title: "Hospital-Lab-Management",
       description:
         "Interactive lab management interface with real-time test status tracking, instant notifications, and an intuitive dashboard for streamlined workflows (Front-End Design)",
-      image: Lab,
+      image: Labimg,
       demoLink: "https://hospital-lab-managements.onrender.com/",
       gitLink: "https://github.com/magdaline4/hospital-Lab-management.git",
     },
