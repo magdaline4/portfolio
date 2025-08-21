@@ -1,0 +1,16 @@
+.projects-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color:  #555879 !important;
+  font-size: xx-large !important;
+}
+
+.projects-title::after{
+   background-color: #555879;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    height: 4px;
+    margin: 8px auto 0;
+    width: 70px;
+}

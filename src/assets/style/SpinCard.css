@@ -1,0 +1,241 @@
+.spin-card {
+  width: 330px;
+  height: 420px;
+  perspective: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.spin-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1.5s ease-in-out;
+  transform-style: preserve-3d;
+}
+a
+/* Remove hover flip completely */
+ .spin-card-inner {
+  transform: none;
+}
+
+/* Flip only when class is added */
+.spin-card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.spin-card-front,
+.spin-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.spin-card-front {
+  background:#aaabaf;
+  display: flex;
+  flex-direction: column;
+}
+
+.spin-card-back {
+  background:#aaabaf;
+  display: flex;
+  flex-direction: column;
+  transform: rotateY(180deg);
+}
+
+.spin-card-img {
+   width: 100%;
+  height: 200px;
+  object-fit: cover; /* Keeps aspect ratio and fills area */
+  object-position: center; /* Centers image inside frame */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.spin-card-content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.spin-card-title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.spin-card-desc {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.additional-details {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.read-more-btn, 
+.back-btn {
+  height: 50px;
+  position: relative; /* Needed for ::after positioning */
+  overflow: hidden; /* Keep the inner curve inside */
+  padding: 10px 20px;
+  background: #555879;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: auto;
+  align-self: flex-start;
+  transition: background 0.3s ease;
+ border: 1px solid #555879;
+
+
+}
+
+/* Curve shape inside the button */
+.read-more-btn::after, 
+.back-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 30px; /* Start small */
+  background-color:#aaabaf;
+  border-top-right-radius: 50px; /* Makes it curved */
+  border-bottom-right-radius: 50px;
+  transition: width 0.4s ease, border-radius 0.4s ease;
+  z-index: 0; /* Stay behind the text */
+}
+
+/* Text stays above the curve */
+.read-more-btn span, 
+.back-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.read-more-btn:hover, 
+.back-btn:hover {
+  color: #555879; 
+}
+
+/* On click — expand the curve */
+.read-more-btn:active::after, 
+.back-btn:active::after {
+  width: 100%; /* Full width */
+  border-radius: 5px; /* Flatten edges */
+}
+
+
+/* On hover — expand the curve to fill the button */
+.read-more-btn:hover::after, 
+.back-btn:hover::after {
+  width: 100%;
+  border-radius: 5px; /* Lose the curve for flat edges */
+  color: #555879 !important;
+
+}
+
+
+
+.btn {
+  display: flex;
+  gap: 10px;
+  
+  
+}
+
+.Demo,
+.Git {
+  height: 40px;
+  width: 100px; /* Fixed width for both buttons */
+  position: relative;
+  overflow: hidden;
+  padding: 10px 10px;
+  background: #555879;
+  color: white;
+  border: 1px solid #555879;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: auto;
+  align-self: flex-start;
+  transition: background 0.3s ease, transform 0.2s ease, color 0.3s ease, border-color 0.3s ease;
+  text-align: center; /* Center text */
+}
+.read-more-btn::after, 
+.back-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 30px; /* Start small */
+  background-color:#aaabaf;
+  border-top-right-radius: 50px; /* Makes it curved */
+  border-bottom-right-radius: 50px;
+  transition: width 0.4s ease, border-radius 0.4s ease;
+  z-index: 0; /* Stay behind the text */
+}
+
+/* Text stays above the curve */
+.read-more-btn span, 
+.back-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.read-more-btn:hover, 
+.back-btn:hover {
+  color: #555879; 
+}
+
+/* On click — expand the curve */
+.read-more-btn:active::after, 
+.back-btn:active::after {
+  width: 100%; /* Full width */
+  border-radius: 5px; /* Flatten edges */
+}
+
+
+/* On hover — expand the curve to fill the button */
+.read-more-btn:hover::after, 
+.back-btn:hover::after {
+  width: 100%;
+  border-radius: 5px; /* Lose the curve for flat edges */
+  color: #555879 !important;
+
+}
+
+/* Hover effect for Demo */
+.Demo:hover , .Git:hover {
+  background:transparent;
+  transform: scale(1.05);
+  border: 1px solid #555879;
+  color: #555879;
+}
+
+
+@media (max-width: 768px) {
+  .spin-card {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    min-height: 350px;
+  }
+
+  .spin-card-img {
+    height: 150px;
+  }
+}

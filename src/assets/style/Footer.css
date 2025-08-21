@@ -1,0 +1,55 @@
+.contact-section {
+  background-color:  #555879;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin: 60px auto;
+}
+
+.mini-heading {
+  font-size: 14px;
+  font-weight: 600;
+  background-color: white;
+  color: #555879;
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.mini-heading:hover{
+  background-color:#aaabaf;
+}
+
+.main-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.email {
+  color: white;
+  font-size: 16px;
+  text-decoration: underline;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.phone {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color:black ; /* hover color */
+}

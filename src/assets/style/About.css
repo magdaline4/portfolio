@@ -1,0 +1,152 @@
+.about-section {
+  position: relative;
+  padding: 80px 20px 120px;
+}
+
+.about-top-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 0;
+}
+
+.about-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.profile-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* === Orbiting Icons Wrapper === */
+.profile-orbit-wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  animation: rotateProfile 20s linear infinite;
+}
+
+.profile-img {
+  width: 170px !important;
+  height: 170px !important;
+  object-fit: cover;
+  border-radius: 90px !important;
+  border: 5px solid #0b0c15;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  position: relative;
+  background-color: #555879;
+}
+
+/* === Orbiting Icons === */
+.orbit-icon {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.orbit-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Positioning each icon */
+
+.orbit-icon.git {
+  top: -30px;
+  left: 35%;
+  transform: translateX(-50%);
+}
+.orbit-icon.html {
+  top: 20px;
+  left: 80%;
+  transform: translateX(-50%);
+}
+.orbit-icon.css {
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.orbit-icon.js {
+    top: 20px;
+    right: 95%;
+  transform: translateX(-50%);
+}
+.orbit-icon.react {
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Animation keyframes */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #0b0c15;
+  text-align: center;
+}
+
+.role {
+  font-size: medium;
+  color:#555879;
+  text-align: center;
+}
+
+.education-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: -10px
+}
+.intro {
+  font-size: 1rem;
+  color: #444;
+}
+.edu-card {
+  background:#aaabaf ;
+  border-left: 6px solid #555879;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.1);
+}
+
+.edu-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #0b0c15;
+}
+
+.edu-card p {
+  font-size: 0.95rem;
+  color: #444;
+}
