@@ -1,6 +1,7 @@
 import React from 'react';
 import '../assets/style/AchievementCard.css';
 
+
 const AchievementCard = ({ image, title, description ,  technologies ,achievement }) => {
   return (
     <div className="achievement-card">

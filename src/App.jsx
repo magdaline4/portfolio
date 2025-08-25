@@ -6,6 +6,8 @@ import Navbar from './components/Navbar'
 import CardsRow from './data/CardsRow'
 import Projects from './data/Projects'
 import Footer from './components/Footer';
+import NormalSkills from './components/NormalSkills'
+import TechnicalSkills from './components/TechnicalSkills'
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
      <Projects/>
      <CardsRow/>
      <Certificates />
+     <NormalSkills />
+     <TechnicalSkills />
      <Footer />
     </>
   )

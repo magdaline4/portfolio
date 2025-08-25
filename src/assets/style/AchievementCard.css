@@ -43,3 +43,20 @@
   line-height: 1; /* improves readability */
 }
 
+
+.projects-title {
+  text-align: center;        /* centers text */
+  margin: 40px 0;            /* spacing above & below */
+}
+
+.title-with-icon {
+  display: inline-flex;       /* ✅ keeps icon + text inline */
+  align-items: center;        /* center vertically */
+  justify-content: center;    /* center horizontally */
+  gap: 10px;                  /* spacing between icon & text */
+}
+.achievement-icon {
+  color: #334155;   /* dark slate */
+  width: 40px;      /* size of icon */
+  height: 40px;
+}

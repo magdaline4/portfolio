@@ -2,6 +2,7 @@ import React from 'react';
 import AchievementCard from '../components/AchievementCard'
 import Img from '../assets/images/achive.webp'
 import '../assets/style/AchievementCard.css'
+import { GiAchievement } from "react-icons/gi";
 
 const cardData = [
   {
@@ -56,8 +57,12 @@ const cardData = [
 
 const CardsRow = () => {
   return (
-    <>
-          <h1 className="projects-title underline-title">My Achievements</h1>
+    <><h1 className="projects-title underline-title">
+  <span className="title-with-icon">
+    <GiAchievement className="achievement-icon" />
+    My Achievements
+  </span>
+</h1>
 
     <div className='cards-grid'>
     

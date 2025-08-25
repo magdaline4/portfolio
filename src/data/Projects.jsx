@@ -5,6 +5,8 @@ import echo from "../assets/images/echo.png";
 import port from "../assets/images/port.png";
 import Card from "../assets/images/card.png";
 import Labimg from "../assets/images/Lab.png"
+import { AiFillCodepenCircle } from "react-icons/ai";
+
 
 const Projects = () => {
   const projectData = [
@@ -42,8 +44,12 @@ const Projects = () => {
 
   return (
     <section className="projects-container">
-      <h1 className="projects-title">My Projects</h1>
-      <div className="projects-grid">
+<h1 className="projects-title underline-title">
+  <span className="title-with-icon">
+    <AiFillCodepenCircle className="projects-icon" />
+    My Projects
+  </span>
+</h1>      <div className="projects-grid">
         {projectData.map((project, index) => (
           <SpinCard
             key={index}
