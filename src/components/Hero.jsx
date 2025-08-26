@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import '../assets/style/Hero.css';
-import heroin from '../assets/images/profile.png';
+import heroin from '../assets/images/pic.jpg';
 import { TypeAnimation } from 'react-type-animation';
 import MagdalinePDF from '../assets/images/Magdaline.pdf';
 

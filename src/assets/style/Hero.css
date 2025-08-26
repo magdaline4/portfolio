@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  color: #555879;
+  color: #7e508f;
   padding: 60px 20px;
   gap: 40px;
 }
@@ -21,7 +21,7 @@
 }
 
 .dot {
-  color: rgb(70, 55, 104);
+  color: #7e508f;
   font-size: 30px;
 }
 
@@ -31,16 +31,17 @@
 }
 
 .name {
-  background: linear-gradient(
-    270deg,
-    #555879,
-    #3B38A0,
-    #7A85C1,
-    #B2B0E8,
-    #7A85C1,
-    #3B38A0,
-    #555879
-  );
+background: linear-gradient(
+  270deg,
+  #7e508f,  /* Dark Purple */
+  #a678d8,  /* Medium Lavender */
+  #e2aeff,  /* Soft Lavender */
+  #f2cfff,  /* Light Lavender */
+  #e2aeff,  /* Soft Lavender */
+  #a678d8,  /* Medium Lavender */
+  #7e508f   /* Dark Purple */
+);
+
   background-size: 800% 800%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -58,7 +59,7 @@
 .typing-text {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #555879;
+  color: #7e508f;
   margin-top: 10px;
 }
 
@@ -73,7 +74,7 @@
 /* ---------- Buttons ---------- */
 .primary {
   position: relative;
-  background-color: #555879;
+  background-color: #7e508f;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -111,15 +112,15 @@
 
 .primary:hover {
   background-color: transparent;
-  border: 1px solid #555879;
-  color: #555879;
+  border: 1px solid #7e508f;
+  color:  #7e508f;
 }
 
 .outline {
   position: relative;
   background-color: transparent;
-  color: #555879;
-  border: 1px solid #555879;
+  color: #7e508f;
+  border: 1px solid #7e508f;
   padding: 12px 20px;
   font-weight: bold;
   cursor: pointer;
@@ -137,7 +138,7 @@
 .outline::after {
   content: "";
   position: absolute;
-  background-color: #555879;
+  background-color:  #7e508f;
   left: 50%;
   top: 50%;
   width: 0;
@@ -176,15 +177,15 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(
-    270deg,
-    #555879,
-    #3B38A0,
-    #7A85C1,
-    #B2B0E8,
-    #7A85C1,
-    #3B38A0,
-    #555879
-  );
+  270deg,
+  #7e508f,  /* Dark Purple */
+  #a678d8,  /* Medium Lavender */
+  #e2aeff,  /* Soft Lavender */
+  #f2cfff,  /* Light Lavender */
+  #e2aeff,  /* Soft Lavender */
+  #a678d8,  /* Medium Lavender */
+  #7e508f   /* Dark Purple */
+);
   background-size: 800% 800%;
   animation: wave 10s ease-in-out infinite;
   z-index: 0;
@@ -222,13 +223,13 @@
 }
 
 .hero-img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 380px;         /* same width & height */
+  height: 220px;  
+  border-radius: 50%;   /* makes it a perfect circle */
+  object-fit: cover;    /* keeps face centered */
   position: relative;
   z-index: 2;
-  top: 10px;
+  top: 0;               /* adjust if needed */
 }
 
 /* ---------- Hover Card ---------- */
@@ -241,8 +242,8 @@
   position: absolute;
   top: 150px;
   right: 250px;
-  background: white;
-  color: #333;
+  background:#7e508f;
+  color: #000000;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
@@ -287,13 +288,14 @@
 
 .profile-hover-card .links a {
   font-size: 0.9rem;
-  color: #0a66c2;  /* LinkedIn blue */
+  color: #000000;  /* LinkedIn blue */
   font-weight: bold;
   text-decoration: none;
 }
 
 .profile-hover-card .links a:hover {
   text-decoration: underline;
+  color: #a678d8;
 }
 
 /* ---------- Responsive ---------- */

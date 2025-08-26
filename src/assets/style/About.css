@@ -50,11 +50,11 @@
   height: 170px !important;
   object-fit: cover;
   border-radius: 90px !important;
-  border: 5px solid #0b0c15;
+  border: 5px solid #7e508f;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   z-index: 1;
   position: relative;
-  background-color: #555879;
+  background-color: #a678d8;
 }
 
 /* === Orbiting Icons === */
@@ -116,7 +116,7 @@
 
 .role {
   font-size: medium;
-  color:#555879;
+  color: #7e508f;
   text-align: center;
 }
 
@@ -133,7 +133,7 @@
 }
 .edu-card {
   background:#E2AEFF  ;
-  border-left: 6px solid #555879;
+  border-left: 6px solid #7e508f;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(59, 130, 246, 0.1);
@@ -148,5 +148,5 @@
 
 .edu-card p {
   font-size: 0.95rem;
-  color: #444;
+  color: #000000;
 }

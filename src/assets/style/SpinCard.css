@@ -36,13 +36,13 @@ a
 }
 
 .spin-card-front {
-  background:#aaabaf;
+  background:#E2AEFF;
   display: flex;
   flex-direction: column;
 }
 
 .spin-card-back {
-  background:#aaabaf;
+  background:#E2AEFF;
   display: flex;
   flex-direction: column;
   transform: rotateY(180deg);
@@ -72,13 +72,13 @@ a
 
 .spin-card-desc {
   font-size: 1rem;
-  color: #555;
+  color: #000000;
   margin-bottom: 15px;
 }
 
 .additional-details {
   font-size: 0.9rem;
-  color: #666;
+  color: #000000;
   margin-bottom: 20px;
 }
 
@@ -88,7 +88,7 @@ a
   position: relative; /* Needed for ::after positioning */
   overflow: hidden; /* Keep the inner curve inside */
   padding: 10px 20px;
-  background: #555879;
+  background:#7e508f;
   color: white;
   border: none;
   border-radius: 5px;
@@ -97,7 +97,7 @@ a
   margin-top: auto;
   align-self: flex-start;
   transition: background 0.3s ease;
- border: 1px solid #555879;
+ border: 1px solid#7e508f;
 
 
 }
@@ -111,7 +111,7 @@ a
   top: 0;
   height: 100%;
   width: 30px; /* Start small */
-  background-color:#aaabaf;
+  background-color:#7e508f;
   border-top-right-radius: 50px; /* Makes it curved */
   border-bottom-right-radius: 50px;
   transition: width 0.4s ease, border-radius 0.4s ease;
@@ -127,7 +127,7 @@ a
 
 .read-more-btn:hover, 
 .back-btn:hover {
-  color: #555879; 
+  color:#7e508f; 
 }
 
 /* On click — expand the curve */
@@ -143,7 +143,7 @@ a
 .back-btn:hover::after {
   width: 100%;
   border-radius: 5px; /* Lose the curve for flat edges */
-  color: #555879 !important;
+  color:#7e508f !important;
 
 }
 
@@ -163,9 +163,9 @@ a
   position: relative;
   overflow: hidden;
   padding: 10px 10px;
-  background: #555879;
+  background:#7e508f;
   color: white;
-  border: 1px solid #555879;
+  border: 1px solid #7e508f;
   border-radius: 5px;
   cursor: pointer;
   font-size: 15px;
@@ -182,7 +182,7 @@ a
   top: 0;
   height: 100%;
   width: 30px; /* Start small */
-  background-color:#aaabaf;
+  background-color:#E2AEFF;
   border-top-right-radius: 50px; /* Makes it curved */
   border-bottom-right-radius: 50px;
   transition: width 0.4s ease, border-radius 0.4s ease;
@@ -198,7 +198,7 @@ a
 
 .read-more-btn:hover, 
 .back-btn:hover {
-  color: #555879; 
+  color: #7e508f; 
 }
 
 /* On click — expand the curve */
@@ -222,8 +222,8 @@ a
 .Demo:hover , .Git:hover {
   background:transparent;
   transform: scale(1.05);
-  border: 1px solid #555879;
-  color: #555879;
+  border: 1px solid #7e508f;
+  color: #7e508f;
 }
 
 

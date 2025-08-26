@@ -11,17 +11,17 @@ const TechnicalSkills = () => {
     },
     {
       name: "CSS",
-      level: "80%",
+      level: "85%",
       description: "Skilled in responsive design, layouts, and animations for modern UIs."
     },
     {
       name: "JavaScript",
-      level: "75%",
+      level: "80%",
       description: "Strong understanding of ES6+, DOM manipulation, and interactive features."
     },
     {
       name: "React.js",
-      level: "75%",
+      level: "80%",
       description: "Proficient in building reusable components, hooks, and single-page apps."
     },
   ];

@@ -1,6 +1,6 @@
 .achievement-card {
   display: flex;
-  background: #aaabaf;
+  background: #E2AEFF;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -36,27 +36,32 @@
   .cards-grid {
     grid-template-columns: 1fr; /* 1 card per row */
   }
-}
 
-.achievement-card p {
-  text-align: justify;
-  line-height: 1; /* improves readability */
-}
+  .achievement-card {
+    display: grid;
+    grid-template-columns: 1fr auto; /* text stretches | image fixed */
+    grid-template-rows: auto auto;   /* row1: heading+image, row2: desc */
+    align-items: start;
+    column-gap: 10px; /* space between heading & image */
+  }
 
+  .achievement-card h2 {
+    grid-column: 1; /* left */
+    grid-row: 1;
+    margin: 0;
+    text-align: left;
+    align-self: start; /* top aligned with image */
+  }
 
-.projects-title {
-  text-align: center;        /* centers text */
-  margin: 40px 0;            /* spacing above & below */
-}
+  .profile-img {
+    display: none;
+  }
 
-.title-with-icon {
-  display: inline-flex;       /* ✅ keeps icon + text inline */
-  align-items: center;        /* center vertically */
-  justify-content: center;    /* center horizontally */
-  gap: 10px;                  /* spacing between icon & text */
-}
-.achievement-icon {
-  color: #334155;   /* dark slate */
-  width: 40px;      /* size of icon */
-  height: 40px;
+  .achievement-card p {
+    grid-column: 1 / span 2; /* full width */
+    grid-row: 2; /* second row */
+    text-align: justify;
+    line-height: 1.4;
+    margin-top: 8px;
+  }
 }
