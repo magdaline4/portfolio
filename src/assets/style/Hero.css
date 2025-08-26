@@ -223,7 +223,7 @@ background: linear-gradient(
 }
 
 .hero-img {
-width: 18vw !important;          /* takes 60% of screen width */
+width: 17.8vw !important;          /* takes 60% of screen width */
   max-width: 250px;  
   border-radius: 50%;   /* makes it a perfect circle */
   object-fit: cover;    /* keeps face centered */
@@ -298,6 +298,38 @@ width: 18vw !important;          /* takes 60% of screen width */
   color: #a678d8;
 }
 
+/* ---------- Responsive ---------- */
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .hero-left {
+    text-align: left;
+    flex: 1;
+  }
+
+  .buttons {
+    justify-content: flex-start;
+  }
+
+  .hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-img {
+    width: 100px;       /* fixed nice size */
+    max-width: 380px;   /* safety limit */
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+}
+
 /* ---------- Responsive: Mobile (up to 767px) ---------- */
 @media (max-width: 767px) {
   .hero {
@@ -367,8 +399,6 @@ width: 18vw !important;          /* takes 60% of screen width */
     max-width: 280px;
   }
 }
-
-
 
 /* ---------- Responsive: Tablet (768px – 1024px) ---------- */
 @media (max-width: 1024px) {
