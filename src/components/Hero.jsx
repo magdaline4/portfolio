@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import '../assets/style/Hero.css';
 import heroin from '../assets/images/profile.png';
 import { TypeAnimation } from 'react-type-animation';
+import MagdalinePDF from '../assets/images/Magdaline.pdf';
 
 const Hero = () => {
   const [showCard, setShowCard] = useState(false);
@@ -37,8 +38,19 @@ const Hero = () => {
         />
 
         <div className="buttons">
-          <button className="primary"><span>Got a project?</span></button>
-          <button className="outline"><span>My resume</span></button>
+<a href="#footer">
+  <button className="primary">
+    <span>Got a project?</span>
+  </button>
+</a> <a href={MagdalinePDF} target="_blank" rel="noopener noreferrer">
+      <button className="outline">
+        <span>My Resume</span>
+      </button>
+    </a>
+
+
+
+
         </div>
       </div>
 
