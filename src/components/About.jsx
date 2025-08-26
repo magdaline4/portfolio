@@ -21,7 +21,7 @@ const About = () => {
             <div className="orbit-icon css"><img src={cssLogo} alt="CSS" /></div>
             <div className="orbit-icon js"><img src={jsLogo} alt="JS" /></div>
             <div className="orbit-icon react"><img src={reactLogo} alt="React" /></div>
-            <img src={pic} alt="Profile" className="profile-img" />
+            <img src={pic} alt="Profile" className="profile-img1" />
           </div>
 
           <div className="profile-details">
