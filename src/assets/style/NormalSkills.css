@@ -1,8 +1,12 @@
 .normal-skills {
-  padding: 4rem 1rem;
+
+ padding: 2rem 1rem; /* mobile default */
+  max-width: 1240px; /* keeps content centered on large screens */
+  margin: 0 auto;
 }
 
 .normal-skills h2 {
+  padding-top: 90px;
   font-size: 1.875rem;
   font-weight: 700;
   color: #1f2937;
@@ -33,6 +37,10 @@
 }
 
 @media (min-width: 768px) {
+  .normal-skills{
+        padding: 2rem;
+
+  }
   .normal-skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }

@@ -1,12 +1,17 @@
-/* Section wrapper */
+/* ===========================
+   Technical Skills Section
+   =========================== */
 .technical-skills {
-  padding: 4rem 1rem;
+  padding: 2rem 1rem; /* mobile default */
+  max-width: 1265px; /* keeps content centered on large screens */
+  margin: 0 auto;
 }
 
 /* Section title */
 .technical-skills h2 {
+  padding-top: 2rem;
   font-size: 1.875rem; /* text-3xl */
-  font-weight: 700; /* font-bold */
+  font-weight: 700;
   color: #1f2937; /* gray-800 */
   text-align: center;
 }
@@ -16,15 +21,20 @@
   height: 0.25rem;
   margin: 0.5rem auto 0;
   border-radius: 4px;
+  background-color: #7e508f; /* accent color */
 }
 
 .technical-skills p {
   margin-top: 1rem;
   text-align: center;
-  color: #000000; /* gray-600 */
+  color: #374151; /* gray-700 */
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-/* Grid layout */
+/* ===========================
+   Grid Layout
+   =========================== */
 .technical-skills-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -33,51 +43,62 @@
 }
 
 @media (min-width: 768px) {
+  .technical-skills {
+    padding: 2rem;
+  }
   .technical-skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
+  .technical-skills {
+    padding: 2rem 3rem;
+  }
   .technical-skills-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-/* Card design */
+/* ===========================
+   Card Design
+   =========================== */
 .tech-skill-card {
-  background-color:#E2AEFF; 
+  background-color: #E2AEFF;
   border-radius: 1rem;
   padding: 1.5rem;
   text-align: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .tech-skill-card:hover {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
 }
 
 .tech-skill-card h3 {
   font-size: 1.125rem; /* text-lg */
   font-weight: 600;
   margin-bottom: 0.5rem;
+  color: #1f2937;
 }
 
-/* Progress bar container */
+/* ===========================
+   Progress Bar
+   =========================== */
 .progress-bar {
   width: 100%;
   height: 1rem;
-  background-color: #F2CFFF; /* gray-200 */
+  background-color: #F2CFFF;
   border-radius: 9999px;
   overflow: hidden;
-  position: relative;
+  margin-top: 0.75rem;
 }
 
-/* Progress bar fill */
 .progress-fill {
   height: 100%;
-  background-color:  #7e508f; /* blue-600 */
+  background-color: #7e508f;
   color: white;
   font-size: 0.75rem;
   font-weight: 700;
@@ -87,16 +108,18 @@
   transition: width 0.6s ease;
 }
 
+/* ===========================
+   Title + Icon
+   =========================== */
 .title-with-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px; /* spacing between icon and text */
-  width: 100%;
+  gap: 0.5rem;
 }
 
 .skills-icon {
   color: #334155; /* dark slate */
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
 }

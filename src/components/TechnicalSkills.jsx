@@ -24,6 +24,11 @@ const TechnicalSkills = () => {
       level: "80%",
       description: "Proficient in building reusable components, hooks, and single-page apps."
     },
+     {
+      name: "SCSS",
+      level: "80%",
+      description: "Skilled in responsive design, layouts, and animations for modern UIs."
+    },
   ];
 
   return (

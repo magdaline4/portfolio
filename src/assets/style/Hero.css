@@ -31,17 +31,16 @@
 }
 
 .name {
-background: linear-gradient(
-  270deg,
-  #7e508f,  /* Dark Purple */
-  #a678d8,  /* Medium Lavender */
-  #e2aeff,  /* Soft Lavender */
-  #f2cfff,  /* Light Lavender */
-  #e2aeff,  /* Soft Lavender */
-  #a678d8,  /* Medium Lavender */
-  #7e508f   /* Dark Purple */
-);
-
+  background: linear-gradient(
+    270deg,
+    #7e508f,
+    #a678d8,
+    #e2aeff,
+    #f2cfff,
+    #e2aeff,
+    #a678d8,
+    #7e508f
+  );
   background-size: 800% 800%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -86,10 +85,7 @@ background: linear-gradient(
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-.primary span {
-  position: relative;
-  z-index: 2;
-}
+.primary span { position: relative; z-index: 2; }
 
 .primary::after {
   content: "";
@@ -98,22 +94,19 @@ background: linear-gradient(
   top: 50%;
   width: 0;
   height: 0;
-  background: #DED3C4;
+  background: #ded3c4;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   transition: width 0.5s ease, height 0.5s ease;
   z-index: 0;
 }
 
-.primary:hover::after {
-  width: 300px;
-  height: 300px;
-}
+.primary:hover::after { width: 300px; height: 300px; }
 
 .primary:hover {
   background-color: transparent;
   border: 1px solid #7e508f;
-  color:  #7e508f;
+  color: #7e508f;
 }
 
 .outline {
@@ -130,15 +123,12 @@ background: linear-gradient(
   transition: color 0.3s ease;
 }
 
-.outline span {
-  position: relative;
-  z-index: 2;
-}
+.outline span { position: relative; z-index: 2; }
 
 .outline::after {
   content: "";
   position: absolute;
-  background-color:  #7e508f;
+  background-color: #7e508f;
   left: 50%;
   top: 50%;
   width: 0;
@@ -149,14 +139,8 @@ background: linear-gradient(
   z-index: 0;
 }
 
-.outline:hover::after {
-  width: 300px;
-  height: 300px;
-}
-
-.outline:hover {
-  color: white !important;
-}
+.outline:hover::after { width: 300px; height: 300px; }
+.outline:hover { color: white !important; }
 
 /* ---------- Hero Right ---------- */
 .hero-right {
@@ -177,34 +161,27 @@ background: linear-gradient(
   align-items: center;
   justify-content: center;
   background: linear-gradient(
-  270deg,
-  #7e508f,  /* Dark Purple */
-  #a678d8,  /* Medium Lavender */
-  #e2aeff,  /* Soft Lavender */
-  #f2cfff,  /* Light Lavender */
-  #e2aeff,  /* Soft Lavender */
-  #a678d8,  /* Medium Lavender */
-  #7e508f   /* Dark Purple */
-);
+    270deg,
+    #7e508f,
+    #a678d8,
+    #e2aeff,
+    #f2cfff,
+    #e2aeff,
+    #a678d8,
+    #7e508f
+  );
   background-size: 800% 800%;
   animation: wave 10s ease-in-out infinite;
   z-index: 0;
 }
 
 .circle-glow::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  background: linear-gradient(
-    270deg,
-    #424775,
-    #1a1b2d,
-    #2b2d45,
-    #1a1b2d,
-    #0b0c15
-  );
+  background: linear-gradient(270deg, #424775, #1a1b2d, #2b2d45, #1a1b2d, #0b0c15);
   background-size: 400% 400%;
   animation: innerWave 12s ease-in-out infinite;
   z-index: 1;
@@ -223,33 +200,29 @@ background: linear-gradient(
 }
 
 .hero-img {
-width: 17.8vw !important;          /* takes 60% of screen width */
-  max-width: 250px;  
-  border-radius: 50%;   /* makes it a perfect circle */
-  object-fit: cover;    /* keeps face centered */
+  width: 17.8vw !important;
+  max-width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
   position: relative;
   z-index: 2;
-  top: 0;               /* adjust if needed */
 }
 
 /* ---------- Hover Card ---------- */
-.profile-wrapper {
-  position: relative;
-  cursor: pointer;
-}
+.profile-wrapper { position: relative; cursor: pointer; }
 
 .profile-hover-card {
   position: absolute;
   top: 150px;
   right: 250px;
-  background:#7e508f;
-  color: #000000;
+  background: #7e508f;
+  color: #000;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   width: 220px;
   opacity: 0;
-  pointer-events: none; /* block when hidden */
+  pointer-events: none;
   transform: translateY(10px);
   transition: all 0.3s ease;
   z-index: 9999;
@@ -258,17 +231,11 @@ width: 17.8vw !important;          /* takes 60% of screen width */
 .profile-wrapper:hover .profile-hover-card,
 .profile-hover-card.show {
   opacity: 1;
-  pointer-events: auto !important; /* enable when visible */
+  pointer-events: auto;
   transform: translateY(0);
-  cursor:  pointer !important;
+  cursor: pointer !important;
 }
-.profile-hover-card.show {
-  opacity: 1;
-  pointer-events: auto; /* 👈 should enable clicking */
-  cursor:  pointer !important;
-    z-index: 9999;
 
-}
 .profile-hover-card h4 {
   margin: 0;
   font-size: 1rem;
@@ -288,7 +255,7 @@ width: 17.8vw !important;          /* takes 60% of screen width */
 
 .profile-hover-card .links a {
   font-size: 0.9rem;
-  color: #000000;  /* LinkedIn blue */
+  color: #000;
   font-weight: bold;
   text-decoration: none;
 }
@@ -300,130 +267,23 @@ width: 17.8vw !important;          /* takes 60% of screen width */
 
 /* ---------- Responsive ---------- */
 @media (min-width: 768px) {
-  .hero {
-    flex-direction: row;
-    text-align: left;
-  }
-
-  .hero-left {
-    text-align: left;
-    flex: 1;
-  }
-
-  .buttons {
-    justify-content: flex-start;
-  }
-
-  .hero-right {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-  
+  .hero { flex-direction: row; text-align: left; }
+  .hero-left { text-align: left; flex: 1; }
+  .buttons { justify-content: flex-start; }
+  .hero-right { flex: 1; display: flex; justify-content: center; }
   .hero-img {
-    width: 100px;       /* fixed nice size */
-    max-width: 380px;   /* safety limit */
+    width: 100px;
+    max-width: 380px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     object-fit: cover;
   }
-
 }
 
-/* ---------- Responsive: Mobile (up to 767px) ---------- */
-@media (max-width: 767px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-  }
-
-  .hero-left {
-    margin: 0;
-    text-align: center;
-  }
-
-  .hero-left h2 {
-    font-size: 20px;
-  }
-
-  .name {
-    font-size: 1.6rem !important;
-  }
-
-  .typing-text {
-    font-size: 1.2rem;
-  }
-
-  .buttons {
-    justify-content: center;
-  }
-
-  .hero-right {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-  }
-
-  /* Circle Glow smaller */
-  .circle-glow {
-    width: 220px;
-    height: 220px;
-    padding: 10px;
-  }
-
-  .circle-glow::before {
-    width: 200px;
-    height: 200px;
-  }
-
-  /* Hero Image inside glow */
-  .hero-img {
-    width: 180px !important;
-    height: 180px !important;
-    max-width: unset;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 0 auto;
-    z-index: 2;
-  }
-
-  /* Hover Card under image */
-  .profile-hover-card {
-    top: 250px;
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 280px;
-  }
-}
-
-/* ---------- Responsive: Tablet (768px – 1024px) ---------- */
 @media (max-width: 1024px) {
-  .hero {
-    flex-direction: row;
-    gap: 20px;
-    padding: 40px 20px;
-  }
-
-  .hero-left {
-    text-align: left;
-    flex: 1;
-    margin-left: 20px;
-  }
-
-  .typing-text {
-    font-size: 1.8rem;
-  }
-
-  .hero-right {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-
+  .hero { flex-direction: row; gap: 20px; padding: 40px 20px; }
+  .hero-left { text-align: left; flex: 1; margin-left: 20px; }
+  .typing-text { font-size: 1.8rem; }
   .profile-hover-card {
     top: 230px;
     right: 50%;
@@ -434,53 +294,29 @@ width: 17.8vw !important;          /* takes 60% of screen width */
 
 /* ---------- Responsive: Mobile (up to 767px) ---------- */
 @media (max-width: 767px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
+  .hero { flex-direction: column; text-align: center; gap: 30px; }
+  .hero-left { margin: 0; text-align: center; }
+  .hero-left h2 { font-size: 20px; }
+  .name { font-size: 1.6rem !important; }
+  .typing-text { font-size: 1.2rem; }
+  .buttons { justify-content: center; }
+  .hero-right { margin-top: 20px; display: flex; justify-content: center; }
+  .circle-glow { width: 220px; height: 220px; padding: 10px; }
+  .circle-glow::before { width: 200px; height: 200px; }
+  .hero-img {
+    width: 200px !important;
+    height: 200px !important;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
   }
-
-  .hero-left {
-    margin: 0;
-    text-align: center;
-  }
-
-  .hero-left h2 {
-    font-size: 20px;
-  }
-
-  .name {
-    font-size: 1.6rem !important;
-  }
-
-  .typing-text {
-    font-size: 1.2rem;
-  }
-
-  .buttons {
-    justify-content: center;
-  }
-
-  .hero-right {
-    margin-top: 20px;
-  }
-
-  .circle-glow {
-    width: 200px;
-    height: 200px;
-    padding: 15px;
-  }
-
-  .circle-glow::before {
-    width: 180px;
-    height: 180px;
-  }
-
   .profile-hover-card {
-    top: 100px;
-    right: 70%;
-    transform: translateX(50%);
-    width: 100%;
-    max-width: 300px;
+    top: 130px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 280px;
   }
 }
