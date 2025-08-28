@@ -3,6 +3,7 @@ import '../assets/style/Hero.css';
 import heroin from '../assets/images/pic.jpg';
 import { TypeAnimation } from 'react-type-animation';
 import MagdalinePDF from '../assets/images/Magdaline.pdf';
+import { Link } from 'react-scroll';
 
 const Hero = () => {
   const [showCard, setShowCard] = useState(false);
@@ -38,11 +39,13 @@ const Hero = () => {
         />
 
         <div className="buttons">
-<a href="#footer">
+<Link to="contact"
+                smooth={true}
+                duration={500}>
   <button className="primary">
     <span>Got a project?</span>
   </button>
-</a> <a href={MagdalinePDF} target="_blank" rel="noopener noreferrer">
+</Link> <a href={MagdalinePDF} target="_blank" rel="noopener noreferrer">
       <button className="outline">
         <span>My Resume</span>
       </button>
