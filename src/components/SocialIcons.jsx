@@ -7,7 +7,7 @@ const SocialIcons = () => {
   return (
     <div className="social-icons1">
       <a
-        href="https://www.linkedin.com/in/your-profile"
+        href="https://www.linkedin.com/in/idaselvammagdaline/"
         target="_blank"
         rel="noopener noreferrer"
         className="icon linkedin1"
@@ -15,7 +15,7 @@ const SocialIcons = () => {
         <BsLinkedin />
       </a>
       <a
-        href="https://github.com/your-username"
+        href="https://github.com/magdaline4"
         target="_blank"
         rel="noopener noreferrer"
         className="icon github1"
