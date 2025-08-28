@@ -12,7 +12,7 @@
   font-size: 14px;
   font-weight: 600;
   background-color: white;
-  color: #555879;
+  color:#7e508f;
   display: inline-block;
   padding: 6px 16px;
   border-radius: 20px;
@@ -20,7 +20,7 @@
 }
 
 .mini-heading:hover{
-  background-color:#aaabaf;
+  background-color:  #E2AEFF !important;
 }
 
 .main-heading {
