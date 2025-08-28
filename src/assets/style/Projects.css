@@ -8,12 +8,12 @@
 .projects-title {
   text-align: center;
   margin-bottom: 2rem;
-  color: #555879 !important;
+  color: #1f2937 !important;
   font-size: xx-large !important;
 }
 
 .projects-title::after {
-  background-color: #555879;
+  background-color: #1f2937;
   border-radius: 2px;
   content: "";
   display: block;
@@ -52,7 +52,7 @@
 }
 
 .projects-icon {
-  color: #334155;  /* dark slate */
+  color: #1f2937;  /* dark slate */
   width: 40px;
   height: 40px;
 }

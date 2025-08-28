@@ -1,6 +1,6 @@
 import React from 'react';
 import AchievementCard from '../components/AchievementCard'
-import Img from '../assets/images/achive.webp'
+import Img from '../assets/images/achive.jpg'
 import '../assets/style/AchievementCard.css'
 import { GiAchievement } from "react-icons/gi";
 

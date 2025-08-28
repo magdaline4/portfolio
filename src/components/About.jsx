@@ -6,17 +6,26 @@ import htmlLogo from '../assets/icons/html.png';
 import cssLogo from '../assets/icons/css.png';
 import jsLogo from '../assets/icons/js.png';
 import reactLogo from '../assets/icons/react.png';
+import { FaUser } from "react-icons/fa";  // 👈 user icon
 
 const About = () => {
   return (
     <section className="about-section" id="about">
       <div className="about-top-background"></div>
-
+  {/* 🔹 Section Heading */}
+        <div className="about-heading">
+          <span className="line"></span>
+          <FaUser className="about-icon" />
+          <h2>About Me</h2>
+          <span className="line"></span>
+        </div>
       <div className="about-container">
+      
+
         {/* Profile Area */}
         <div className="profile-area">
           <div className="profile-orbit-wrapper">
-                      <div className="orbit-icon git"><img src={gitLogo} alt="HTML" /></div>
+            <div className="orbit-icon git"><img src={gitLogo} alt="Git" /></div>
             <div className="orbit-icon html"><img src={htmlLogo} alt="HTML" /></div>
             <div className="orbit-icon css"><img src={cssLogo} alt="CSS" /></div>
             <div className="orbit-icon js"><img src={jsLogo} alt="JS" /></div>
@@ -32,10 +41,13 @@ const About = () => {
 
         {/* Education Section */}
         <div className="education-section">
-        <div className="edu-card">
-               <p className="intro">
+          <div className="edu-card">
+            {/* ✅ using <br/> for ENTER */}
+            <p className="intro">
               I’m a passionate web developer focused on building responsive and user-friendly interfaces.
+              <br/><br/>
               My interests lie in React, JavaScript, and creating visually appealing websites.
+              <br/><br/>
               I am currently pursuing my Computer Science degree and actively working on real-world projects to sharpen my skills.
             </p>
           </div>

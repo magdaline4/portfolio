@@ -16,7 +16,7 @@
 .section-line {
   width: 4rem;
   height: 0.25rem;
-  background-color:#98A1BC;
+  background-color: #1f2937;
   margin: 0.5rem auto 0;
   border-radius: 4px;
 }
@@ -86,7 +86,7 @@
 
 
 .skills-icon {
-  color: #334155; /* dark slate */
+  color: #1f2937 !important; /* dark slate */
   width: 32px;
   height: 32px;
   text-align: center;

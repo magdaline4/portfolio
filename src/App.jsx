@@ -1,30 +1,30 @@
-import './App.css'
-import About from './components/About'
-import Certificates from './components/Certificates'
-import Header from './components/Hero'
-import Navbar from './components/Navbar'
-import CardsRow from './data/CardsRow'
-import Projects from './data/Projects'
-import Footer from './components/Footer';
-import NormalSkills from './components/NormalSkills'
-import TechnicalSkills from './components/TechnicalSkills'
+import React from "react";
+import Navbar from "./components/Navbar";
+import Header from "./components/Hero";
+import About from "./components/About";
+import Projects from "./data/Projects";
+import CardsRow from "./data/CardsRow";
+import Certificates from "./components/Certificates";
+import NormalSkills from "./components/NormalSkills";
+import TechnicalSkills from "./components/TechnicalSkills";
+import Footer from "./components/Footer";
 
-
-function App() {
- 
+const App = () => {
   return (
     <>
-    <Navbar />
-     <Header />
-     <About/>
-     <Projects/>
-     <CardsRow/>
-     <Certificates />
-     <NormalSkills />
-     <TechnicalSkills />
-     <Footer />
+      <Navbar />
+      <div id="home"><Header /></div>
+      <div id="about"><About /></div>
+      <div id="projects"><Projects /></div>
+      <div id="cards"><CardsRow /></div>
+      <div id="certificates"><Certificates /></div>
+      <div id="skills">
+        <NormalSkills />
+        <TechnicalSkills />
+      </div>
+      <div id="contact"><Footer /></div>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

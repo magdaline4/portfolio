@@ -13,10 +13,10 @@
 
 
 
-.profile-img {
-  width: 100px;
-  height: 100px;
-  border-radius: 20px;
+.profile-imges {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
   object-fit: cover;
 }
 
@@ -53,7 +53,7 @@
     align-self: start; /* top aligned with image */
   }
 
-  .profile-img {
+  .profile-imges {
     display: none;
   }
 

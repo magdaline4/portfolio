@@ -5,7 +5,7 @@ import '../assets/style/AchievementCard.css';
 const AchievementCard = ({ image, title, description ,  technologies ,achievement }) => {
   return (
     <div className="achievement-card">
-      <img className="profile-img" src={image} alt="Profile" />
+      <img className="profile-imges" src={image} alt="Profile" />
       <div className="info">
         <h2>{title}</h2>
         <p>{description}</p>
