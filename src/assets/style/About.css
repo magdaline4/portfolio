@@ -1,3 +1,7 @@
+  .about-container{
+    top: 40px !important;
+  }
+
 .about-section {
   position: relative;
   padding: 80px 20px 120px;
@@ -185,4 +189,12 @@
 .about-icon {
   font-size: 26px;
   color: #1f2937;
+}
+
+/* Mobile (stack vertically) */
+@media (max-width: 600px) {
+
+  .about-container{
+    top: 40px !important;
+  }
 }
