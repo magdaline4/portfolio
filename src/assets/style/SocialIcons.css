@@ -1,0 +1,34 @@
+.social-icons1 {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+}
+
+.social-icons1 .icon {
+  font-size: 28px;
+  color: white;
+  background: #1f2937; /* dark gray background */
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons1 .icon:hover {
+  transform: scale(1.1);
+}
+
+.social-icons1 .linkedin1 {
+  background:#7e508f; /* LinkedIn blue */
+}
+
+.social-icons1 .github1 {
+  background: #7e508f; /* GitHub black */
+}

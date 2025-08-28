@@ -8,6 +8,7 @@ import Certificates from "./components/Certificates";
 import NormalSkills from "./components/NormalSkills";
 import TechnicalSkills from "./components/TechnicalSkills";
 import Footer from "./components/Footer";
+import SocialIcons from "./components/SocialIcons";
 
 const App = () => {
   return (
@@ -23,6 +24,9 @@ const App = () => {
         <TechnicalSkills />
       </div>
       <div id="contact"><Footer /></div>
+
+
+      <SocialIcons />
     </>
   );
 };
