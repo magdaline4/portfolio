@@ -84,10 +84,10 @@ a
 
 .read-more-btn, 
 .back-btn {
-  height: 50px;
+  height: 40px !important;
   position: relative; /* Needed for ::after positioning */
   overflow: hidden; /* Keep the inner curve inside */
-  padding: 10px 20px;
+  padding: 10px 10px;
   background:#7e508f;
   color: white;
   border: none;
